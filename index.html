@@ -20,7 +20,7 @@ body {
 }
 
 .card h1 {
-    font-size: 30px;
+    font-size: clamp(28px, 4vw, 60px);
     top: 0;
     background: #2c2c54;
     padding-bottom: 10px;
@@ -38,7 +38,7 @@ body {
     padding: 12px 30px;
     border-radius: 30px;
 
-    font-size: 38px;   /* 🔥 ใหญ่ขึ้น */
+    font-size: clamp(24px, 3vw, 50px);
     font-weight: bold;
 
     box-shadow: 0 5px 20px rgba(0,0,0,0.4);
@@ -50,7 +50,7 @@ body {
     background: #2c2c54;
     padding: 30px;
     border-radius: 20px;
-    width: 500px;
+    width: 700px; /* จาก 500 → 700 */
     max-width: 90%;
     max-height: 90vh;   /* 🔥 จำกัดความสูง */
     overflow-y: auto;   /* 🔥 scroll ได้ */
@@ -70,14 +70,14 @@ button {
     display: block;
     width: 100%;
     margin: 8px 0;
-    padding: 14px;
+    padding: clamp(10px, 1.5vw, 20px);
 
     border: none;
     border-radius: 20px; /* 🔥 โค้งมากขึ้น */
 
     background: linear-gradient(135deg, #ff9a3c, #ff4e00); /* 🔥 สีไล่ */
     color: white;
-    font-size: 16px;
+    font-size: clamp(16px, 2vw, 28px);
     font-weight: bold;
 
     cursor: pointer;
