@@ -19,8 +19,13 @@ body {
     padding: 20px;     /* 🔥 กันติดขอบ */
 }
 
+.card h3 {
+    font-size: clamp(16px, 2vw, 26px);
+}
+
+
 .card h1 {
-    font-size: clamp(28px, 4vw, 60px);
+    font-size: 40px;
     top: 0;
     background: #2c2c54;
     padding-bottom: 10px;
@@ -38,7 +43,7 @@ body {
     padding: 12px 30px;
     border-radius: 30px;
 
-    font-size: clamp(24px, 3vw, 50px);
+    font-size: clamp(24px, 3vw, 48px);
     font-weight: bold;
 
     box-shadow: 0 5px 20px rgba(0,0,0,0.4);
@@ -70,14 +75,14 @@ button {
     display: block;
     width: 100%;
     margin: 8px 0;
-    padding: clamp(10px, 1.5vw, 20px);
+    font-size: clamp(16px, 2vw, 24px);
+    padding: clamp(10px, 1.5vw, 18px);
 
     border: none;
     border-radius: 20px; /* 🔥 โค้งมากขึ้น */
 
     background: linear-gradient(135deg, #ff9a3c, #ff4e00); /* 🔥 สีไล่ */
     color: white;
-    font-size: clamp(16px, 2vw, 28px);
     font-weight: bold;
 
     cursor: pointer;
